@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/samaanMainLogoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/samaanmainlogo" />
+
+    <TextView
+        android:id="@+id/signInUserNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:text="Username"
+        android:padding="6dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/signInEmailView"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/signInPasswordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/signInPasswordPasswordView"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/signInResetPasswordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Reset Password"
+        android:textColor="@color/light_greenish_blue"
+        android:textStyle="normal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/signInSignInButton"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="@color/light_greenish_blue"
+        android:layout_marginTop="20dp"
+        android:gravity="center|center_horizontal"
+        android:textColor="@android:color/white"
+        android:text="Sign in with email" />
+
+    <TextView
+        android:id="@+id/signInDontHaveAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center|center_horizontal"
+        android:text="Don't have an account?" />
+
+    <TextView
+        android:id="@+id/signInSignUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/light_greenish_blue"
+        android:gravity="center|center_horizontal"
+        android:text="Sign Up" />
+
+</LinearLayout>
