@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Samaan pk"
+rootProject.name = "My Application"
 include(":app")
  

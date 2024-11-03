@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrowCategoryProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Back arrow"
+            android:src="@drawable/arrow_back_ios_24px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="272dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="528dp"
+            android:drawableStart="@drawable/search_24px"
+            android:drawablePadding="8dp"
+            android:hint="Search for Items"
+            android:inputType="text"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/back_arrowCategoryProduct"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="31dp"
+            android:padding="8dp"
+            android:text="SmartWatches"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="300sp"
+                android:layout_weight="1"
+                android:layout_margin="8sp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8sp">
+
+                    <ImageView
+                        android:id="@+id/productImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/watchimage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="8sp"
+                        android:text="Product Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="4sp"
+                        android:text="Price: RS 500"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8sp"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        app:backgroundTint="@null"
+                        android:padding="8sp"
+                        android:text="Add to Cart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="300sp"
+                android:layout_margin="8sp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/watchimage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="8sp"
+                        android:text="Product Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="4sp"
+                        android:text="Price: RS 500"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8sp"
+                        app:backgroundTint="@null"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        android:padding="8sp"
+                        android:text="Add to Cart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="300sp"
+                android:layout_margin="8sp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/watchimage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="8sp"
+                        android:text="Product Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="4sp"
+                        android:text="Price: RS 500"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:backgroundTint="@null"
+                        android:layout_marginTop="8sp"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        android:padding="8sp"
+                        android:text="Add to Cart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="300sp"
+                android:layout_margin="8sp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/watchimage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="8sp"
+                        android:text="Product Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="4sp"
+                        android:text="Price: RS 500"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8sp"
+                        app:backgroundTint="@null"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        android:padding="8sp"
+                        android:text="Add to Cart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="300sp"
+                android:layout_margin="8sp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/watchimage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="8sp"
+                        android:text="Product Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="4sp"
+                        android:text="Price: RS 500"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8sp"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        android:padding="8sp"
+                        app:backgroundTint="@null"
+                        android:text="Add to Cart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180sp"
+                android:layout_height="300sp"
+                android:layout_margin="8sp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/watchimage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="8sp"
+                        android:text="Product Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="4sp"
+                        android:text="Price: RS 500"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8sp"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        app:backgroundTint="@null"
+                        android:padding="8sp"
+                        android:text="Add to Cart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
