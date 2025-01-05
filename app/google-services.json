@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1002195481597",
+    "project_id": "saamaanpk-cd3c4",
+    "storage_bucket": "saamaanpk-cd3c4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002195481597:android:5fbd37cc82ceee63609f94",
+        "android_client_info": {
+          "package_name": "com.sagara.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXoeGsvCzU92QrrRWBTp-gxPyWJ5FXk8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

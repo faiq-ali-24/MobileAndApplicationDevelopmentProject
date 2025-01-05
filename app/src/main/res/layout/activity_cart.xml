@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/CartMyCartTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="My Cart"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Start Shopping Button -->
+    <Button
+        android:id="@+id/startShoppingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="end"
+        android:background="@drawable/cart_button_"
+        android:text="Start Shopping"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:drawableEnd="@drawable/chevron_right_24pxw"
+        android:drawablePadding="8dp" />
+
+    <!-- Empty Bag TextView -->
+    <TextView
+        android:id="@+id/cartEmptyBagTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Your bag is empty"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <!-- RecyclerView for Cart Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        tools:listitem="@layout/item_cart_product" />
+
+    <!-- Total Price TextView -->
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Total: Rs 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cart_button_"
+        android:text="Pay"
+        android:backgroundTint="@null"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</LinearLayout>
